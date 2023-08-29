@@ -1,0 +1,29 @@
+{
+  "name": "03-bases-node",
+  "version": "1.0.0",
+  "description": "Es una simple tabla de multiplicar con archivo de texto",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevRubio/Curso_NodeJs.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Js"
+  ],
+  "author": "Oscar Rubio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevRubio/Curso_NodeJs/issues"
+  },
+  "homepage": "https://github.com/DevRubio/Curso_NodeJs#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
