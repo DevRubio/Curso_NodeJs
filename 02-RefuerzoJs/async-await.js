@@ -44,11 +44,21 @@ const empleados = [
       })
   }
   
-  const id = 1
+  const id = 10
 
+  //async transforma la funciona para devolver una promesa
+  const getInfoUsuario = async(id) =>{
+    try{
+      const empleado = await getEmpleado(id)
+      const salario = await getSalario(id)
 
-  const getInfoUsuario = async() =>{
-    return 'Hola Mundo'
+      return `El salario del empleado: ${empleado} es ${salario}`
+
+    } catch(error){
+      throw error
+    }
   }
 
-  getInfoUsuario()
+  getInfoUsuario(id)
+    .then(response => console.log(response))
+    .catch(err => console.log(err))
