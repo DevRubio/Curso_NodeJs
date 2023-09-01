@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/DevRubio/Curso_NodeJs#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
