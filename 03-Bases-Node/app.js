@@ -1,4 +1,5 @@
 const { CrearArchivo } = require('./helpers/multiplicar')
+require('colors')
 const argv = require('./config/yargs')
 console.clear()
 
@@ -17,7 +18,7 @@ const [, base=5] = arg3.split('=')
  */
 
 CrearArchivo(argv.b, argv.l)
-    .then(response => console.log(response))
+    .then(response => console.log(response.rainbow))
     .catch(err => console.error(err))
 
 
