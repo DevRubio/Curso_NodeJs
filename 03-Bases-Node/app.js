@@ -17,7 +17,7 @@ const [, base=5] = arg3.split('=')
 
  */
 
-CrearArchivo(argv.b, argv.l)
+CrearArchivo(argv.b, argv.l, argv.h)
     .then(response => console.log(response.rainbow))
     .catch(err => console.error(err))
 

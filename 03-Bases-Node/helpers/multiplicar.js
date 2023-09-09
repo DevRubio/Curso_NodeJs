@@ -1,12 +1,13 @@
 const fs = require("fs");
 const colors = require('colors')
 
-const CrearArchivo = async (base = 5, l) => {
+const CrearArchivo = async (base = 5, l, h) => {
   try {
-    let salida = "";
+    let salida, consola = "";
 
-    for (i = 1; i <= 10; i++) {
-      salida += `${base} ${'x'.green} ${i} ${'='.green} ${base * i} \n`;
+    for (i = 1; i <= h; i++) {
+      salida += `${base} x ${i} = ${base * i} \n`;
+      consola += `${base} ${'x'.green} ${i} ${'='.green} ${base * i} \n`;
     }
 
     // console.log(salida);
