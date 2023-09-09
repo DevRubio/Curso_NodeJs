@@ -12,7 +12,7 @@ const CrearArchivo = async (base = 5, l, h) => {
 
     // console.log(salida);
 
-    fs.writeFileSync(`Tabla-${base}.txt`, salida);
+    fs.writeFileSync(`./salida/Tabla-${base}.txt`, salida);
     if (l == true) {
       console.log("==================".green);
       console.log(" TABLA DEL: ".green, colors.blue(base));
