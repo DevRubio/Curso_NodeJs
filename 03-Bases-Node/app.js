@@ -1,14 +1,11 @@
 const { CrearArchivo } = require('./helpers/multiplicar')
-const argv = require('yargs').argv
+const argv = require('./config/yargs')
+console.clear()
 
 //const base = 3
 
-console.clear()
 
-console.log(process.argv)
-console.log(argv)
-
-console.log('base: yargs',argv.base)
+//console.log(process.argv)
 
 //Se utiliza para ver los argumentos que vienen en la consola
 //console.log(process.argv)
@@ -17,11 +14,12 @@ console.log('base: yargs',argv.base)
 const [, base=5] = arg3.split('=')
 
 
+ */
 
-CrearArchivo(base)
+CrearArchivo(argv.b, argv.l)
     .then(response => console.log(response))
     .catch(err => console.error(err))
 
 
- */
+
 
