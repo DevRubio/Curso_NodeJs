@@ -1,6 +1,6 @@
 import colors from 'colors'
 import { inquirerMenu, pausa, leerInput } from './helpers/inquirer.js'
-import { guardarDB } from './helpers/guardarArchivo.js'
+import { guardarDB, leerDB } from './helpers/guardarArchivo.js'
 import { Tareas } from './models/tareas.js'
  
 //const { MostrarMenu, Pausa } = require('./helpers/mensajes')
@@ -10,6 +10,8 @@ console.clear()
 const Main = async () =>{
     let opt = ''
 
+    const tareasDB = leerDB()
+    
     const tareas = new Tareas()
 
     do{
