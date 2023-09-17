@@ -1,6 +1,6 @@
 import colors from 'colors'
 import { inquirerMenu, pausa, leerInput } from './helpers/inquirer.js'
-import { Tarea } from './models/tarea.js'
+import { guardarDB } from './helpers/guardarArchivo.js'
 import { Tareas } from './models/tareas.js'
  
 //const { MostrarMenu, Pausa } = require('./helpers/mensajes')
@@ -24,7 +24,7 @@ const Main = async () =>{
                 console.log(tareas.listadoArr)
             break
         }
-
+        guardarDB( tareas.listadoArr)
         await pausa()   
     } while(opt !== '0')
 }
