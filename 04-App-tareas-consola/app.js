@@ -9,11 +9,14 @@ console.clear()
 
 const Main = async () =>{
     let opt = ''
-
-    const tareasDB = leerDB()
-    
     const tareas = new Tareas()
 
+    const tareasDB = leerDB()
+
+    if(tareasDB){
+        tareas.cargarTareasFromArray(tareasDB)
+    }    
+   
     do{
         opt = await inquirerMenu()    
         
